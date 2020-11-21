@@ -27,7 +27,7 @@ const ShippingScreen = ({ history }) => {
       <CheckoutSteps step1 step2 />
       <h1>Shipping</h1>
       <Form onSubmit={submitHandler}>
-        <FormGroup controlId="address">
+        <Form.Group controlId="address">
           <Form.Label>Address</Form.Label>
           <Form.Control
             type="text"
@@ -36,9 +36,9 @@ const ShippingScreen = ({ history }) => {
             required
             onChange={(e) => setAddress(e.target.value)}
           ></Form.Control>
-        </FormGroup>
+        </Form.Group>
 
-        <FormGroup controlId="city">
+        <Form.Group controlId="city">
           <Form.Label>City</Form.Label>
           <Form.Control
             type="text"
@@ -46,9 +46,9 @@ const ShippingScreen = ({ history }) => {
             value={city}
             onChange={(e) => setCity(e.target.value)}
           ></Form.Control>
-        </FormGroup>
+        </Form.Group>
 
-        <FormGroup controlId="postalCode">
+        <Form.Group controlId="postalCode">
           <Form.Label>Postal Code</Form.Label>
           <Form.Control
             type="text"
@@ -56,9 +56,9 @@ const ShippingScreen = ({ history }) => {
             value={postalCode}
             onChange={(e) => setPostalCode(e.target.value)}
           ></Form.Control>
-        </FormGroup>
+        </Form.Group>
 
-        <FormGroup controlId="country">
+        <Form.Group controlId="country">
           <Form.Label>Country</Form.Label>
           <Form.Control
             type="text"
@@ -66,7 +66,7 @@ const ShippingScreen = ({ history }) => {
             value={country}
             onChange={(e) => setCountry(e.target.value)}
           ></Form.Control>
-        </FormGroup>
+        </Form.Group>
 
         <Button type="submit" variant="primary">
           Continue
